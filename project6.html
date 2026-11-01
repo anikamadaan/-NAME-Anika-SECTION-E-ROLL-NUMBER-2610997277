@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Restaurant Menu</title>
+</head>
+
+<body>
+
+    <h1>INTERACTIVE RESTAURANT MENU USING IMAGE MAP</h1>
+
+    <p>Click on any food item to know more about it.</p>
+
+    <!-- Food Image -->
+    <img src="food.jpg"
+         alt="Restaurant Food Menu"
+         usemap="#foodmap"
+         width="714"
+         height="642">
+
+    <!-- Image Map -->
+    <map name="foodmap">
+
+        <!-- Pizza: Circle Area -->
+        <area shape="circle"
+              coords="355,455,115"
+              href="https://en.wikipedia.org/wiki/Pizza"
+              alt="Pizza"
+              target="_blank">
+
+        <!-- Burger: Circle Area -->
+        <area shape="circle"
+              coords="100,470,85"
+              href="https://en.wikipedia.org/wiki/Hamburger"
+              alt="Burger"
+              target="_blank">
+
+        <!-- French Fries: Rectangle Area -->
+        <area shape="rect"
+              coords="165,190,335,330"
+              href="https://en.wikipedia.org/wiki/French_fries"
+              alt="French Fries"
+              target="_blank">
+
+        <!-- Menu Card: Rectangle Area -->
+        <area shape="rect"
+              coords="340,0,650,285"
+              href="https://en.wikipedia.org/wiki/Menu"
+              alt="Menu Card"
+              target="_blank">
+
+        <!-- Sandwich: Polygon Area -->
+        <area shape="poly"
+              coords="0,340,160,340,180,450,170,580,0,600"
+              href="https://en.wikipedia.org/wiki/Sandwich"
+              alt="Sandwich"
+              target="_blank">
+
+        <!-- Cake Slice: Polygon Area -->
+        <area shape="poly"
+              coords="95,0,330,0,330,150,200,180,110,130"
+              href="https://en.wikipedia.org/wiki/Cake"
+              alt="Cake Slice"
+              target="_blank">
+
+        <!-- Remaining Area: Default -->
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/Restaurant"
+              alt="Restaurant"
+              target="_blank">
+
+    </map>
+
+</body>
+</html>

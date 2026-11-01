@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Map Explorer</title>
+</head>
+<body>
+
+    <h1>World Map Explorer</h1>
+
+    <p>
+        Click on any country on the world map to explore
+        more information about it.
+    </p>
+
+    <!-- World Map Image -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+         alt="World Map"
+         usemap="#worldmap"
+         width="1000"
+         height="500">
+
+    <!-- Image Map -->
+    <map name="worldmap">
+
+        <!-- USA: Circle Area -->
+        <area shape="circle"
+              coords="250,150,60"
+              href="https://en.wikipedia.org/wiki/United_States"
+              alt="United States"
+              target="_blank">
+
+        <!-- Australia: Rectangle Area -->
+        <area shape="rect"
+              coords="780,350,930,450"
+              href="https://en.wikipedia.org/wiki/Australia"
+              alt="Australia"
+              target="_blank">
+
+        <!-- India: Polygon Area -->
+        <area shape="poly"
+              coords="620,220,680,220,700,270,670,320,640,300,610,260"
+              href="https://en.wikipedia.org/wiki/India"
+              alt="India"
+              target="_blank">
+
+        <!-- Brazil: Polygon Area -->
+        <area shape="poly"
+              coords="350,250,400,260,430,310,410,370,380,390,350,340"
+              href="https://en.wikipedia.org/wiki/Brazil"
+              alt="Brazil"
+              target="_blank">
+
+        <!-- Japan: Circle Area -->
+        <area shape="circle"
+              coords="850,190,30"
+              href="https://en.wikipedia.org/wiki/Japan"
+              alt="Japan"
+              target="_blank">
+
+        <!-- Default Area -->
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/World"
+              alt="World"
+              target="_blank">
+
+    </map>
+
+</body>
+</html>
